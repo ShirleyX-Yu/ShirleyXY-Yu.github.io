@@ -1,7 +1,12 @@
 <!DOCTYPE html>
 <html>
 <body>
-
+  
+<script> 
+  let function1 = () => {localStorage.setItem("name", "tom"); localStorage.setItem("money", 30);}
+  let caclulateBudget = () => {console.log(parseInt(document.getElementById(totalIncome).innerText));}
+  </script>
+  
 <h1>Budget Page</h1>
 <form action = "confirm.html">
   <label for="totalIncome">Income:</label>
@@ -13,10 +18,7 @@
   <input type="submit" onclick="function1()" value="Update">
   <input type="button" onclick="calculateBudget()" value="Test">
 </form> 
-  <script> 
-  let function1 = () => {localStorage.setItem("name", "tom"); localStorage.setItem("money", 30);}
-  let caclulateBudget = () => {console.log(parseInt(document.getElementById(totalIncome).innerText));}
-  </script>
+  
   
 </body>
 </html>
