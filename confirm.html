@@ -1,10 +1,11 @@
 <html>
+<script>
+  let update = () => {document.getElementById("l1").innerText = localStorage.getItem("name");}
+</script>
 <body>
   <label id = "l1"> </label>
   <label id = "l2"> </label>
   <input type = "button" onclick = "update()"></input>
 </body>
-<script>
-  let update = () => {document.getElementById("l1").innerText = localStorage.getItem("name");}
-</script>
+
 </html>
