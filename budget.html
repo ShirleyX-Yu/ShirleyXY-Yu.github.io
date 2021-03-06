@@ -8,11 +8,14 @@
   <input type="text" id="totalIncome" name="totalIncome"><br><br>
   <label for="ratio">Save % of Income:</label>
   <input type="ratio" id="ratio" name="ratio"><br><br>
-  <p> Total Buget: </p>
+
+  <p> Total Buget:  </p>
   <input type="submit" onclick="function1()" value="Update">
+  <input type="button" onclick="calculateBudget()" value="Test">
 </form> 
   <script> 
   let function1 = () => {localStorage.setItem("name", "tom"); localStorage.setItem("money", 30);}
+  let caclulateBudget = () => {console.log(parseInt(document.getElementById(totalIncome).innerText));}
   </script>
   
 </body>
